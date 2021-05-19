@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>SK and Echo Wedding</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="header" id="title">We Are Getting Married!</h1>
+      <img class="responsive-img" src="img/main_pic.JPG" alt="main-pic">
+      <h3 class="header">김길현 & 조아라</h3>
+      <h3 class="header">07 / 18 / 21 4:00 PM</h3>
+      <h3 class="header">Rosehill Community Center</h3>
+      <h3 class="header">Countdown</h3>
+    </div>
+    <div class="row" id="clockdiv">
+      <div id="clock"  class="card red lighten-3">
+        <div class="col s3" >
+          <span class="days"></span>
+          <div class="smalltext">Days</div>
+        </div>
+        <div class="col s3">
+          <span class="hours"></span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div class="col s3" >
+          <span class="minutes"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+          <span class="seconds"></span>
+          <div class="smalltext">Seconds</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h2 id="story">Our Story</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptas, accusantium, consequatur praesentium non ea voluptatibus harum aut deserunt ullam rerum magnam excepturi facilis aperiam veniam error repellat fuga soluta.</p>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <h2 class="couple-info">Bride Info</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolorum temporibus, quaerat repellendus voluptate doloribus laboriosam facilis amet ipsam laudantium, labore nisi ex saepe, nam explicabo aut ipsa veniam odio.</p>
+      </div>
+      <div class="col s6">
+        <h2 class="couple-info">Groom Info</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit dolorum temporibus, quaerat repellendus voluptate doloribus laboriosam facilis amet ipsam laudantium, labore nisi ex saepe, nam explicabo aut ipsa veniam odio.</p>
+      </div>
+    </div>
+    <div class="row">
+      <h2 id="gallery">Gallery</h2>
+      <div class="col s12">
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#one!"><img src="img/portrait/Portrait/Portrait/Gallery_1.png"></a>
+          <a class="carousel-item" href="#two!"><img src="img/gallery2.png"></a>
+          <a class="carousel-item" href="#three!"><img src="img/gallery3.png"></a>
+          <a class="carousel-item" href="#four!"><img src="img/gallery5.jpg"></a>
+        </div>
+        <div id="icons">
+          <a id="gallery-left" onclick="movePrevCarousel()" class="btn-floating btn-large waves-effect waves-light red lighten-3"><i class="material-icons">chevron_left</i></a>
+          <a id="gallery-right" onclick="moveNextCarousel()" class="btn-floating btn-large waves-effect waves-light red lighten-3"><i class="material-icons">chevron_right</i></a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <h2 id="directions">Directions</h2>
+      <h3>Address</h3>
+      <div>304 Lincoln Ave, Mukilteo, WA 98275, United States</div>
+    </div>
+    <div class="row">
+      <h3>Pictures of Rose hill</h3>
+      <div class="col s12">
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#two!"><img src="img/rosehill/rosehill2.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="img/rosehill/rosehill3.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h3>Interactive Map</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.515467597651!2d-122.30527028411737!3d47.94575547920854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54900196eb426e61%3A0xa77c6bc165a19d58!2sRosehill%20Community%20Center!5e0!3m2!1sen!2sus!4v1621372293173!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="source.js">
+   
+  </script>
+</body>
+</html>
