@@ -35,5 +35,33 @@ body {
 }
 
 .carousel {
-  min-height: 900px;
+  max-height: 900px;
+}
+
+.dot {
+  
+  height: 250px;
+  width: 250px;
+  background-color: #ffcdd2;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.days {
+  font-size: 70px;
+  display: flexbox;
+  line-height: 250px;
+}
+
+.smalltext {
+  font-size: 30px;
+}
+
+.circle {
+  text-align: center;
+}
+
+.responsive-iframe {
+  display: flex;
+  justify-content: center;
 }
