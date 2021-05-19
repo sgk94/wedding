@@ -29,3 +29,11 @@ body {
   padding-top: 20px;
   text-align: center;
 }
+
+#map {
+  text-align: center;
+}
+
+.carousel {
+  min-height: 900px;
+}
