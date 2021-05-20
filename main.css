@@ -38,16 +38,31 @@ body {
   .carousel-slider {
     height: 900px;
   }
+
+  iframe {
+    height: 800px;
+    width: 1000px
+  }
 }
 @media (max-height: 1400px) and (min-height: 851px) {
   .carousel-slider {
+    height: 500px;
+  }
+
+  iframe {
     height: 400px;
+    width: 600px
   }
 }
 
 @media (max-height: 850px) {
   .carousel-slider {
     height:230px;
+  }
+
+  iframe {
+    height: 300px;
+    width: 300px
   }
 }
 
