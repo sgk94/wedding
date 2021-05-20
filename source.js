@@ -1,3 +1,28 @@
+
+  var audio = new Audio('audio/perhapslove.mp3');
+  var playButton = document.getElementById('play-button');
+  var pauseButton = document.getElementById('pause-button');
+
+  playButton.addEventListener('click', function () {
+  audio.play();
+  audio.volume = 0.08;
+  playButton.style.display = "none";
+  pauseButton.style.display = "block";
+
+  })
+
+  pauseButton.addEventListener('click', function () {
+    audio.pause();
+    playButton.style.display = "block";
+    pauseButton.style.display = "none";
+    
+  })
+
+
+
+
+
+
 function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
@@ -19,9 +44,9 @@ function initializeClock(id, endtime) {
   const clock = document.getElementById(id);
   console.log(clock);
   const daysSpan = clock.querySelector('.days');
-  const hoursSpan = clock.querySelector('.hours');
-  const minutesSpan = clock.querySelector('.minutes');
-  const secondsSpan = clock.querySelector('.seconds');
+  //const hoursSpan = clock.querySelector('.hours');
+  //const minutesSpan = clock.querySelector('.minutes');
+  //const secondsSpan = clock.querySelector('.seconds');
 
   function updateClock() {
     const t = getTimeRemaining(endtime);
@@ -41,6 +66,7 @@ function initializeClock(id, endtime) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems, 
     {

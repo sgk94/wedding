@@ -3,6 +3,7 @@ body {
 }
 #title {
   color: #ff8a80;
+  margin-top: 0px;
 }
 #story {
   color: #ffebee;
@@ -67,17 +68,18 @@ body {
 }
 
 .dot {
-  height: 250px;
-  width: 250px;
-  background-color: #ffcdd2;
+  height: 170px;
+  width:170px;
+  background-color: #f48fb1;
   border-radius: 50%;
   display: inline-block;
 }
 
 .days {
-  font-size: 70px;
+  font-size: 40px;
   display: flexbox;
-  line-height: 250px;
+  line-height: 170px;
+  color: white;
 }
 
 .smalltext {
@@ -99,4 +101,32 @@ body {
 
 #gallery-right {
   margin: 15px;
+}
+
+#address {
+  font-size: 30px;
+}
+
+#music {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#play-button {
+  color:#ff8a80;
+}
+
+#pause-button {
+  color: #ff8a80;
+  display: none;
+}
+
+.music-button {
+  border: none;
+  color: white;
+  background: none;
+}
+
+.music-button:focus {
+  background-color: white;
 }
