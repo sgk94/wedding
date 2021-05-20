@@ -1,16 +1,20 @@
 body {
   font-family: 'Gamja Flower', cursive;
 }
+
 #title {
-  color: #ff8a80;
+  color: #ef9a9a;
   margin-top: 0px;
 }
-#story {
-  color: #ffebee;
+#our-day {
+  color: #ef9a9a;
 }
 
+.story {
+  text-align: center;
+}
 .couple-info {
-  color:#ffcdd2;
+  color:#ef9a9a;
 }
 
 #gallery {
@@ -18,8 +22,8 @@ body {
   text-align: center;
 }
 
-#directions {
-  color: #e57373;
+#address-color {
+  color: #ef9a9a;
 }
 
 .header {
@@ -35,7 +39,26 @@ body {
   text-align: center;
 }
 
-@media (min-height: 1401px) {
+@media (min-width: 1401px) {
+  .dot {
+    height: 170px;
+    width:170px;
+    background-color: #ffcdd2;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .days {
+    font-size: 40px;
+    display: flexbox;
+    line-height: 170px;
+    color: white;
+  }
+  
+  .smalltext {
+    font-size: 30px;
+  }
+
   .carousel-slider {
     height: 900px;
   }
@@ -45,7 +68,26 @@ body {
     width: 1000px
   }
 }
-@media (max-height: 1400px) and (min-height: 851px) {
+@media (max-width: 1400px) and (min-width: 851px) {
+  .dot {
+    height: 130px;
+    width:130px;
+    background-color: #ffcdd2;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .days {
+    font-size: 30px;
+    display: flexbox;
+    line-height: 130px;
+    color: white;
+  }
+  
+  .smalltext {
+    font-size: 20px;
+  }
+
   .carousel-slider {
     height: 500px;
   }
@@ -56,7 +98,26 @@ body {
   }
 }
 
-@media (max-height: 850px) {
+@media (max-width: 850px) {
+  .dot {
+    height: 80px;
+    width:80px;
+    background-color: #ffcdd2;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .days {
+    font-size: 20px;
+    display: flexbox;
+    line-height: 80px;
+    color: white;
+  }
+  
+  .smalltext {
+    font-size: 10px;
+  }
+
   .carousel-slider {
     height:230px;
   }
@@ -65,25 +126,6 @@ body {
     height: 300px;
     width: 300px
   }
-}
-
-.dot {
-  height: 170px;
-  width:170px;
-  background-color: #f48fb1;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.days {
-  font-size: 40px;
-  display: flexbox;
-  line-height: 170px;
-  color: white;
-}
-
-.smalltext {
-  font-size: 30px;
 }
 
 .circle {
@@ -103,7 +145,7 @@ body {
   margin: 15px;
 }
 
-#address {
+.address {
   font-size: 30px;
 }
 
