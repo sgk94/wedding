@@ -34,12 +34,24 @@ body {
   text-align: center;
 }
 
-.carousel {
-  max-height: 900px;
+@media (min-height: 1401px) {
+  .carousel-slider {
+    height: 900px;
+  }
+}
+@media (max-height: 1400px) and (min-height: 851px) {
+  .carousel-slider {
+    height: 400px;
+  }
+}
+
+@media (max-height: 850px) {
+  .carousel-slider {
+    height:230px;
+  }
 }
 
 .dot {
-  
   height: 250px;
   width: 250px;
   background-color: #ffcdd2;
@@ -64,4 +76,12 @@ body {
 .responsive-iframe {
   display: flex;
   justify-content: center;
+}
+
+#gallery-left {
+  margin: 15px;
+}
+
+#gallery-right {
+  margin: 15px;
 }
