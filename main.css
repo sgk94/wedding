@@ -28,6 +28,11 @@ body {
 
 .header {
   text-align: center;
+  font-size: 38px;
+}
+
+.sub-title {
+  text-align: center;
 }
 
 #icons {
@@ -147,6 +152,7 @@ body {
 
 .address {
   font-size: 30px;
+  text-align: center;
 }
 
 #music {
