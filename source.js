@@ -23,30 +23,32 @@
 
 
 
-function getTimeRemaining(endtime) {
-  const total = Date.parse(endtime) - Date.parse(new Date());
-  const seconds = Math.floor((total / 1000) % 60);
-  const minutes = Math.floor((total / 1000 / 60) % 60);
-  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(total / (1000 * 60 * 60 * 24));
-  
-  return {
-    total,
-    days,
-    hours,
-    minutes,
-    seconds
-  };
-}
+
 
 function initializeClock(id, endtime) {
-  console.log(id);
+ 
   const clock = document.getElementById(id);
-  console.log(clock);
+  
   const daysSpan = clock.querySelector('.days');
   //const hoursSpan = clock.querySelector('.hours');
   //const minutesSpan = clock.querySelector('.minutes');
   //const secondsSpan = clock.querySelector('.seconds');
+  function getTimeRemaining(endtime) {
+    const total = Date.parse(endtime) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+   
+    
+    return {
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
+    };
+  }
 
   function updateClock() {
     const t = getTimeRemaining(endtime);
@@ -87,7 +89,7 @@ function movePrevCarousel() {
   moveLeft.prev();
 }
 
-const deadline = "2021-07-18";
+const deadline = "Sun July 18 2021 24:00:00 GMT-0700 (Pacific Daylight Time)";
 initializeClock('clockdiv', deadline);
 
 //1280x400
