@@ -2,6 +2,10 @@ body {
   font-family: 'Gamja Flower', cursive;
 }
 
+.groom-bride-pic {
+  border: 2px solid #ffcdd2;
+}
+
 #title {
   color: #ef9a9a;
   margin-top: 0px;
@@ -37,7 +41,7 @@ body {
 }
 
 #icons {
-  padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
