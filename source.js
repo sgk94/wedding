@@ -89,7 +89,7 @@ function movePrevCarousel() {
   moveLeft.prev();
 }
 
-const deadline = "Sun July 18 2021 24:00:00 GMT-0700 (Pacific Daylight Time)";
+const deadline = "2021-07-20T01:11:10+0000";
 initializeClock('clockdiv', deadline);
 
 //1280x400
