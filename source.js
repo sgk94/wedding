@@ -18,13 +18,6 @@
     
   })
 
-
-
-
-
-
-
-
 function initializeClock(id, endtime) {
  
   const clock = document.getElementById(id);
