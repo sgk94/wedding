@@ -23,9 +23,9 @@ function initializeClock(id, endtime) {
   const clock = document.getElementById(id);
   
   const daysSpan = clock.querySelector('.days');
-  //const hoursSpan = clock.querySelector('.hours');
-  //const minutesSpan = clock.querySelector('.minutes');
-  //const secondsSpan = clock.querySelector('.seconds');
+  const hoursSpan = clock.querySelector('.hours');
+  const minutesSpan = clock.querySelector('.minutes');
+  const secondsSpan = clock.querySelector('.seconds');
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -47,9 +47,9 @@ function initializeClock(id, endtime) {
     const t = getTimeRemaining(endtime);
 
     daysSpan.innerHTML = (t.days + ' days');
-    //hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    //minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    //secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
@@ -82,7 +82,7 @@ function movePrevCarousel() {
   moveLeft.prev();
 }
 
-const deadline = "2021-07-20T01:11:10+0000";
+const deadline = "2021-07-18T21:00:00+0000";
 initializeClock('clockdiv', deadline);
 
 //1280x400

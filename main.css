@@ -9,6 +9,7 @@ body {
 
 #our-story {
   font-size: 23px;
+  margin: 5px 200px;
 }
 
 #title {
@@ -83,9 +84,10 @@ body {
     width: 1000px
   }
 
-  #bride-pic {
+  .groom-bride-pic {
     margin-left: 50px;
   }
+
 }
 @media (max-width: 1400px) and (min-width: 851px) {
   .dot {
