@@ -88,6 +88,11 @@ body {
     margin-left: 50px;
   }
 
+  #our-story {
+    font-size: 23px;
+    margin: 10px 150px;
+  }
+
 }
 @media (max-width: 1400px) and (min-width: 851px) {
   .dot {
