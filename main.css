@@ -2,12 +2,21 @@ body {
   font-family: 'Gamja Flower', cursive;
 }
 
+.our-story {
+  text-align: center;
+}
+
+.blessing-text {
+  text-align: center;
+  font-size: 30px;
+}
+
 .groom-bride-pic {
   border: 3px solid #ffcdd2;
   justify-content: center;
 }
 
-#our-story {
+.our-story {
   font-size: 23px;
   
 }
@@ -56,6 +65,9 @@ body {
 }
 
 @media (min-width: 1401px) {
+  .lines {
+    width: 200px
+  }
   .dot {
     height: 170px;
     width:170px;
@@ -95,6 +107,10 @@ body {
 
 }
 @media (max-width: 1400px) and (min-width: 851px) {
+  .lines {
+    width: 150px
+  }
+
   .dot {
     height: 130px;
     width:130px;
@@ -125,6 +141,10 @@ body {
 }
 
 @media (max-width: 850px) {
+  .lines {
+    width: 110px
+  }
+
   .dot {
     height: 80px;
     width:80px;
