@@ -21,6 +21,10 @@ body {
   
 }
 
+.parents-child {
+  font-size: 23px;
+}
+
 #title {
   color: #ef9a9a;
   margin-top: 0px;
